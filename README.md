@@ -17,13 +17,13 @@ Cara commit:
 - how to check location branch
   `git branch`
 - pindah branch
-  `git checkout <branch> 
+  `git checkout <branch> `
 - menyamakan current branch dengan main
   `git pull origin main`
 - add perubahan nya
   `git add .` // harus di branch sendiri
 - commit
-  `git commit -m "messagee"` // harus di branch sendiri
+  `git commit -m "message"` // harus di branch sendiri
 - push
   `git push origin <branch>` // harus di branch sendiri -> git origin feature/login
 

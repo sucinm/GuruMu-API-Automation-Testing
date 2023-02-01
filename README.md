@@ -1,13 +1,43 @@
-# Getting started with REST API testing with Serenity and Cucumber 6
+# GuruMu API
+Create automation testing for API
 
-This is a simple starter project for Serenity with Cucumber 6 and RestAssured
+Cara pindah branch:
+```
+git checkout feature_a
+```
 
-## Want to learn more?
-For more information about Serenity BDD, you can read the [**Serenity BDD Book**](https://serenity-bdd.github.io/theserenitybook/latest/index.html), the official online Serenity documentation source. Other sources include:
-* **[Byte-sized Serenity BDD](https://www.youtube.com/channel/UCav6-dPEUiLbnu-rgpy7_bw/featured)** - tips and tricks about Serenity BDD
-* [**Serenity BDD Blog**](https://johnfergusonsmart.com/category/serenity-bdd/) - regular articles about Serenity BDD
-* [**The Serenity Dojo**](https://www.serenity-dojo.com) - Tailored BDD and Test Automation Training and Mentoring
+Cara membuat branch baru:
+```
+git branch feature_b
+```
 
-** Clone This Template From https://github.com/serenity-bdd/serenity-rest-starter
+
+Cara commit:
+
+- how to check location branch
+  `git branch`
+- pindah branch
+  `git checkout <branch> 
+- menyamakan current branch dengan main
+  `git pull origin main`
+- add perubahan nya
+  `git add .` // harus di branch sendiri
+- commit
+  `git commit -m "messagee"` // harus di branch sendiri
+- push
+  `git push origin <branch>` // harus di branch sendiri -> git origin feature/login
+
+# NOTE
+FORMAT NAMA BRANCH:
+
+- feature/[HTTP METHOD]-[ENDPOINT] contoh:
+    - `feature/login`
+    - `feature/reservation`
+
+FORMAT COMMIT MESSAGE:
+- [NAMA BRANCH]: message. contoh:
+    - `feature/login: Add schenario for login` 
+
+
 * Convert json to json schema ? https://www.liquid-technologies.com/online-json-to-schema-converter
 * Maven repository: https://mvnrepository.com/

@@ -18,12 +18,12 @@ Cara commit:
   `git branch`
 - pindah branch
   `git checkout <branch> `
-- menyamakan current branch dengan main
-  `git pull origin main`
 - add perubahan nya
   `git add .` // harus di branch sendiri
 - commit
   `git commit -m "message"` // harus di branch sendiri
+- menyamakan current branch dengan main
+  `git pull --rebase origin main`
 - push
   `git push origin <branch>` // harus di branch sendiri -> git origin feature/login
 

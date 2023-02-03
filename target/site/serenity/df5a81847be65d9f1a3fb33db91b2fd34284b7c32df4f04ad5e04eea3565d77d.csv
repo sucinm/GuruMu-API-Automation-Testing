@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Post Guru","Delete guru with valid token","SUCCESS","2023-02-03T20:56:04.861+07:00[Asia/Jakarta]","0.0","11.32"
+"Get All Guru","Get all data guru with valid url","SUCCESS","2023-02-03T20:56:40.211+07:00[Asia/Jakarta]","0.0","3.87"
+"Get Single Guru","Get single data guru with valid id","SUCCESS","2023-02-03T20:56:45.996+07:00[Asia/Jakarta]","0.0","5.51"
+"Post Guru","Add guru with valid json","SUCCESS","2023-02-03T20:56:56.446+07:00[Asia/Jakarta]","0.0","2.0"
+"Put Guru","Update guru with valid token and valid form-data","SUCCESS","2023-02-03T20:57:02.124+07:00[Asia/Jakarta]","0.0","6.43"

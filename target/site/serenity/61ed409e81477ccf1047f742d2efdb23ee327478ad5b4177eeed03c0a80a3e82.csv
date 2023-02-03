@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Get Single Guru","Get single data guru with valid id","SUCCESS","2023-02-03T20:56:45.996+07:00[Asia/Jakarta]","0.0","5.51"
+"Get Single Guru","Get single data guru with unregister id","FAILURE","2023-02-03T20:56:51.516+07:00[Asia/Jakarta]","0.0","1.81"
+"Get Single Guru","Get single data guru with special char as id","FAILURE","2023-02-03T20:56:53.342+07:00[Asia/Jakarta]","0.0","3.07"

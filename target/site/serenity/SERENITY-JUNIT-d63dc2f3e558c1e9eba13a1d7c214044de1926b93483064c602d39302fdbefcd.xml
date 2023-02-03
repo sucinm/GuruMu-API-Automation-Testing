@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Get All Guru" skipped="0" tests="2" time="5.72" timestamp="2023-02-03 08:56:40"><testcase name="Get all data guru with valid url"/><testcase name="Get all data guru with invalid url"/></testsuite>

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Get Single Guru
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.446 s <<< FAILURE! - in Get Single Guru
+Get single data guru with unregister id(Get Single Guru)  Time elapsed: 1.811 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <404> but was <200>.
+
+
+Get single data guru with special char as id(Get Single Guru)  Time elapsed: 3.083 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <404> but was <200>.
+
+

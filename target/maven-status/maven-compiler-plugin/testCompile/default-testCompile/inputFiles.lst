@@ -1,0 +1,11 @@
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/LoginAPI.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/Utils/Authorization.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/StepDef/Guru/GetAllGuruStepDef.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/StepDef/Guru/GetGuruStepDef.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/StepDef/Guru/DeleteGuruStepDef.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/StepDef/GeneralStepDef.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/Utils/Constant.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/GuruAPI.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/CucumberTestSuite.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/StepDef/Guru/PutGuruStepDef.java
+/Users/suci/IdeaProjects/GuruMuAPI/src/test/java/starter/GuruMu/StepDef/Guru/PostGuruStepDef.java

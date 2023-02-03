@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         tags = "@Test",
         plugin = {"pretty"},
-        features = "classpath:features/GuruMu" //adjust to running feature
+        features = "classpath:features/" //adjust to running feature
 )
 public class CucumberTestSuite {
 }

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="serenity-rest-starter" />
         <module name="BAK_GuruMuAPI" />
+        <module name="QE-API" />
       </profile>
     </annotationProcessing>
   </component>

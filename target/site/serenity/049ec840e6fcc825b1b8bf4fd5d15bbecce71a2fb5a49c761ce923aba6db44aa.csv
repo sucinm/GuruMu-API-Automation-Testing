@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Post Guru","Delete guru with expired token","FAILURE","2023-02-03T20:56:16.22+07:00[Asia/Jakarta]","0.0","6.74"
-"Post Guru","Delete guru without token","FAILURE","2023-02-03T20:56:22.989+07:00[Asia/Jakarta]","0.0","17.2"
-"Post Guru","Add guru with invalid json","FAILURE","2023-02-03T20:56:58.451+07:00[Asia/Jakarta]","0.0","3.66"

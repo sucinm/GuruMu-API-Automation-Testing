@@ -13,7 +13,8 @@ git branch feature_b
 
 
 Cara commit:
-
+- menyamakan current branch dengan main // harus di branch main
+  `git pull --rebase origin main`
 - how to check location branch
   `git branch`
 - pindah branch
@@ -22,8 +23,6 @@ Cara commit:
   `git add .` // harus di branch sendiri
 - commit
   `git commit -m "message"` // harus di branch sendiri
-- menyamakan current branch dengan main
-  `git pull --rebase origin main`
 - push
   `git push origin <branch>` // harus di branch sendiri -> git origin feature/login
 

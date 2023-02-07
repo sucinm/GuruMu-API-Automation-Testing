@@ -1,0 +1,11 @@
+{
+  "data": {
+    "id": 1,
+    "nama": "John Doe",
+    "email": "johndoe@gmail.com",
+    "alamat": "Surabaya, Jawa Timur",
+    "telepon": "08123456789",
+    "avatar": "https://capstonegurumu.s3.ap-southeast-1.amazonaws.com/files/students/tina123@gmail.com/avatar.jpeg"
+  },
+  "message": "berhasil menampilkan profil siswa"
+}

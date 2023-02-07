@@ -1,5 +1,7 @@
 package starter.GuruMu.Utils;
 
+import org.hamcrest.Matcher;
+
 public class Constant {
     public static String BASE_URL = "https://virtserver.swaggerhub.com/CapstoneAltaBE14/GuruMu/1.0.0";
     public static final String DIR = System.getProperty("user.dir");
@@ -10,4 +12,5 @@ public class Constant {
     public static String DATA_TOKEN = "data.token";
     public static String DATA_NAMA = "data.nama";
     public static String MESSAGE = "message";
+    public static String DATA_STATUS = "data.status_pembayaran";
 }

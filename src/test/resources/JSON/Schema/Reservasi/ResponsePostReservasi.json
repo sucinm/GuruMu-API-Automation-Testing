@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "guru_id": {
+      "type": "integer"
+    },
+    "pesan": {
+      "type": "string"
+    },
+    "metode_belajar": {
+      "type": "string"
+    },
+    "tanggal": {
+      "type": "string"
+    },
+    "jam": {
+      "type": "string"
+    },
+    "alamat": {
+      "type": "string"
+    },
+    "telepon": {
+      "type": "string"
+    },
+    "metode_pembayaran": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "guru_id",
+    "pesan",
+    "metode_belajar",
+    "tanggal",
+    "jam",
+    "alamat",
+    "telepon",
+    "metode_pembayaran"
+  ]
+}

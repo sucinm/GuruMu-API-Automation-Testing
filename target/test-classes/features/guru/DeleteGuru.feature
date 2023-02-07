@@ -1,4 +1,4 @@
-Feature: Post Guru
+Feature: Delete Guru
   @Test @PositiveCase
   Scenario: Delete guru with valid token
     Given Delete single data guru with valid token

@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "reservasi_id": {
+              "type": "integer"
+            },
+            "nama_murid": {
+              "type": "string"
+            },
+            "pelajaran": {
+              "type": "string"
+            },
+            "tanggal": {
+              "type": "string"
+            },
+            "jam": {
+              "type": "string"
+            },
+            "tautan_gmet": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "reservasi_id",
+            "nama_murid",
+            "pelajaran",
+            "tanggal",
+            "jam",
+            "tautan_gmet",
+            "status"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "rservasi_id": {
+              "type": "integer"
+            },
+            "nama_murid": {
+              "type": "string"
+            },
+            "pelajaran": {
+              "type": "string"
+            },
+            "tanggal": {
+              "type": "string"
+            },
+            "tautan_gmet": {
+              "type": "string"
+            },
+            "jam": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "rservasi_id",
+            "nama_murid",
+            "pelajaran",
+            "tanggal",
+            "tautan_gmet",
+            "jam",
+            "status"
+          ]
+        }
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "message"
+  ]
+}

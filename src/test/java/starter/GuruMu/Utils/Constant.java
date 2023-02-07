@@ -13,4 +13,8 @@ public class Constant {
     public static String DATA_NAMA = "data.nama";
     public static String MESSAGE = "message";
     public static String DATA_STATUS = "data.status_pembayaran";
+    public static String DATA_TANGGAL = "data.tanggal";
+    public static String DATA_JAM = "data.jam";
+
+
 }

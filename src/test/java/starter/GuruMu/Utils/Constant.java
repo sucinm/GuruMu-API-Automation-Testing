@@ -12,5 +12,9 @@ public class Constant {
     public static String DATA_TOKEN = "data.token";
     public static String DATA_NAMA = "data.nama";
     public static String MESSAGE = "message";
+
+    public static String DATA_EMAIL = "data.email";
+
     public static String DATA_STATUS = "data.status_pembayaran";
+
 }

@@ -6,7 +6,6 @@ import net.thucydides.core.annotations.Step;
 import starter.GuruMu.Utils.Constant;
 
 import java.io.File;
-import java.util.HashMap;
 import java.util.Map;
 
 public class GuruAPI {

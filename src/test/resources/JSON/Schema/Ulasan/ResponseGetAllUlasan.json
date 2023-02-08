@@ -8,85 +8,76 @@
         {
           "type": "object",
           "properties": {
-            "guru_id": {
+            "ulasan_id": {
               "type": "integer"
             },
-            "nama": {
-              "type": "string"
-            },
-            "alamat": {
+            "nama_guru": {
               "type": "string"
             },
             "penilaian": {
-              "type": "number"
+              "type": "integer"
             },
-            "judul": {
-              "type": "string"
-            },
-            "pelajaran": {
-              "type": "string"
-            },
-            "avatar": {
+            "ulasan": {
               "type": "string"
             }
           },
           "required": [
-            "guru_id",
-            "nama",
-            "alamat",
+            "ulasan_id",
+            "nama_guru",
             "penilaian",
-            "judul",
-            "pelajaran",
-            "avatar"
+            "ulasan"
           ]
         },
         {
           "type": "object",
           "properties": {
-            "guru_id": {
+            "ulasan_id": {
               "type": "integer"
             },
-            "nama": {
-              "type": "string"
-            },
-            "alamat": {
+            "nama_guru": {
               "type": "string"
             },
             "penilaian": {
-              "type": "number"
+              "type": "integer"
             },
-            "judul": {
-              "type": "string"
-            },
-            "pelajaran": {
-              "type": "string"
-            },
-            "avatar": {
+            "ulasan": {
               "type": "string"
             }
           },
           "required": [
-            "guru_id",
-            "nama",
-            "alamat",
+            "ulasan_id",
+            "nama_guru",
             "penilaian",
-            "judul",
-            "pelajaran",
-            "avatar"
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ulasan_id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ulasan_id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
           ]
         }
       ]
     },
     "message": {
-      "type": "object",
-      "properties": {
-        "example": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "example"
-      ]
+      "type": "string"
     }
   },
   "required": [

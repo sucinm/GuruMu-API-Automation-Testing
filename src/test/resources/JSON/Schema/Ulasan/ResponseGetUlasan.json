@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "ulasan_id": {
+              "type": "integer"
+            },
+            "nama_siswa": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ulasan_id",
+            "nama_siswa",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ulasan_id": {
+              "type": "integer"
+            },
+            "nama_siswa": {
+              "type": "string"
+            },
+            "penilain": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ulasan_id",
+            "nama_siswa",
+            "penilain",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ulasan_id": {
+              "type": "integer"
+            },
+            "nama_siswa": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ulasan_id",
+            "nama_siswa",
+            "penilaian",
+            "ulasan"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

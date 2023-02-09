@@ -7,6 +7,7 @@ import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
 import starter.GuruMu.GuruAPI;
 import starter.GuruMu.JadwalGuruAPI;
+import starter.GuruMu.Utils.Authorization;
 import starter.GuruMu.Utils.Constant;
 
 import java.io.File;
@@ -17,12 +18,19 @@ public class PostJadwalGuruStepDef
 {
     @Steps
     JadwalGuruAPI jadwalGuruAPI;
+    Authorization authorization = new Authorization();
 
     @Given("Add jadwal guru with valid json")
     public void addJadwalGuruWithValidJson()
     {
         File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuru.json");
         jadwalGuruAPI.setPostJadwalGuru(json);
+    }
+
+    @And("Guru already login")
+    public void guruAlreadyLogin()
+    {
+        jadwalGuruAPI.setGetAllSesiWihoutForm(authorization.getToken());
     }
 
     @When("Post jadwal guru request")

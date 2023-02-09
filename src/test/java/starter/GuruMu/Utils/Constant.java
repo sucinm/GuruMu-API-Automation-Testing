@@ -3,7 +3,7 @@ package starter.GuruMu.Utils;
 import org.hamcrest.Matcher;
 
 public class Constant {
-    public static String BASE_URL = "https://virtserver.swaggerhub.com/CapstoneAltaBE14/GuruMu/1.0.0";
+    public static String BASE_URL = "https://devmyproject.site";
     public static final String DIR = System.getProperty("user.dir");
     public static String JSON_REQUEST = DIR + "/src/test/resources/JSON/Request";
     public static String JSON_SCHEMA = DIR + "/src/test/resources/JSON/Schema";

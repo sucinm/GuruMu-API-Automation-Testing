@@ -34,7 +34,7 @@ public class JadwalGuruAPI
     @Step("Get sesi guru with valid/invalid token and valid/invalid form-data")
     public void setGetAllSesi(String token, Map<String,String> formParam){
         SerenityRest.given()
-                .header("Authorization", "Bearer" + token)
+                .header("Authorization", "Bearer " + token)
                 .contentType(ContentType.TEXT)
                 .formParams(formParam);
     }
@@ -42,7 +42,7 @@ public class JadwalGuruAPI
     @Step("Get sesi guru with valid/invalid token")
     public void setGetAllSesiWihoutForm(String token){
         SerenityRest.given()
-                .header("Authorization", "Bearer" + token)
+                .header("Authorization", "Bearer " + token)
                 .contentType(ContentType.TEXT);
     }
 }

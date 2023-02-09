@@ -30,7 +30,7 @@ public class PostJadwalGuruStepDef
     @And("Guru already login")
     public void guruAlreadyLogin()
     {
-        jadwalGuruAPI.setGetAllSesiWihoutForm(authorization.getToken());
+        jadwalGuruAPI.setGetAllSesiWihoutForm(authorization.getTokenGuru());
     }
 
     @When("Post jadwal guru request")
@@ -73,5 +73,11 @@ public class PostJadwalGuruStepDef
     {
         File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuruBlankJam.json");
         jadwalGuruAPI.setPostJadwalGuru(json);
+    }
+
+    @And("Guru already login without bearer token")
+    public void guruAlreadyLoginWithoutBearerToken()
+    {
+        jadwalGuruAPI.setGetAllSesiWihoutForm(Authorization.EXPIRED_TOKEN);
     }
 }

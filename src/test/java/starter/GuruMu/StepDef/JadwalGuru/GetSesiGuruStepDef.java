@@ -42,8 +42,9 @@ public class GetSesiGuruStepDef
     }
 
     @Given("Get sesi guru with valid token and valid form-data")
-    public void getSesiGuruWithValidTokenAndValidFormData() {
-        jadwalGuruAPI.setGetAllSesi(authorization.getToken(), getFormValidParamsMap());
+    public void getSesiGuruWithValidTokenAndValidFormData()
+    {
+        jadwalGuruAPI.setGetAllSesi(authorization.getTokenGuru(), getFormValidParamsMap());
     }
 
     @When("Get sesi guru request")
@@ -54,7 +55,7 @@ public class GetSesiGuruStepDef
 
     @Given("Get sesi guru without form-data and valid bearer")
     public void getSesiGuruWihoutFormAndValidBearer() {
-        jadwalGuruAPI.setGetAllSesiWihoutForm(authorization.getToken());
+        jadwalGuruAPI.setGetAllSesiWihoutForm(authorization.getTokenGuru());
     }
 
     private Map<String, String> getFormValidParamsMap() {
@@ -64,4 +65,22 @@ public class GetSesiGuruStepDef
         return formParams;
     }
 
+    @Given("Get sesi guru without form-data and bearer")
+    public void getSesiGuruWihoutFormAndBearer() {
+        jadwalGuruAPI.setGetAllSesiWihoutForm(Authorization.EXPIRED_TOKEN);
+    }
+
+    @Given("Get sesi guru with valid token and form-data but invalid parameter")
+    public void getSesiGuruWithValidFormAndBearerButInvalidParam()
+    {
+        jadwalGuruAPI.setGetAllSesi(authorization.getTokenGuru(), getFormInvalidParamsMap());
+    }
+
+    private Map<String, String> getFormInvalidParamsMap() {
+        Map<String, String> formParams = new HashMap<>();
+        formParams.put("role", "guru");
+        formParams.put("status", "selesai");
+        formParams.put("id", "200");
+        return formParams;
+    }
 }

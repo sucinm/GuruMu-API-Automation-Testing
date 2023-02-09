@@ -41,46 +41,9 @@ public class GetSesiGuruStepDef
                 .body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
 
-    @Given("Get sesi guru with valid token and valid form-data")
-    public void getSesiGuruWithValidTokenAndValidFormData()
-    {
-        jadwalGuruAPI.setGetAllSesi(authorization.getTokenGuru(), getFormValidParamsMap());
-    }
-
     @When("Get sesi guru request")
     public void getSesiGuruRequest()
     {
         SerenityRest.when().get(JadwalGuruAPI.GET_SESI);
-    }
-
-    @Given("Get sesi guru without form-data and valid bearer")
-    public void getSesiGuruWihoutFormAndValidBearer() {
-        jadwalGuruAPI.setGetAllSesiWihoutForm(authorization.getTokenGuru());
-    }
-
-    private Map<String, String> getFormValidParamsMap() {
-        Map<String, String> formParams = new HashMap<>();
-        formParams.put("role", "guru");
-        formParams.put("status", "selesai");
-        return formParams;
-    }
-
-    @Given("Get sesi guru without form-data and bearer")
-    public void getSesiGuruWihoutFormAndBearer() {
-        jadwalGuruAPI.setGetAllSesiWihoutForm(Authorization.EXPIRED_TOKEN);
-    }
-
-    @Given("Get sesi guru with valid token and form-data but invalid parameter")
-    public void getSesiGuruWithValidFormAndBearerButInvalidParam()
-    {
-        jadwalGuruAPI.setGetAllSesi(authorization.getTokenGuru(), getFormInvalidParamsMap());
-    }
-
-    private Map<String, String> getFormInvalidParamsMap() {
-        Map<String, String> formParams = new HashMap<>();
-        formParams.put("role", "guru");
-        formParams.put("status", "selesai");
-        formParams.put("id", "200");
-        return formParams;
     }
 }

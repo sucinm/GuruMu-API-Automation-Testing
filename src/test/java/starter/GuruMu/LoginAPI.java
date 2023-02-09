@@ -5,15 +5,20 @@ import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import starter.GuruMu.Utils.Constant;
 
+import java.awt.*;
 import java.io.File;
 
 public class LoginAPI {
     public static String POST_LOGIN = Constant.BASE_URL + "/login";
+    public static String INVALID_PATH_LOGIN = Constant.BASE_URL + "/l0gin";
 
-    @Step("Post login with valid JSON")
+    @Step("Post login with valid/invalid User")
     public void postLogin(File json) {
         SerenityRest.given()
                 .contentType(ContentType.JSON)
                 .body(json);
     }
+
+
+
 }

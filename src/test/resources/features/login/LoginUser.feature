@@ -4,7 +4,7 @@ Feature: Login User
     Given Post user login with valid User
     When Send request login user
     Then Should return status code 200
-    And Response body contains email "johndoe@gmail.com" and message "login sukses"
+    And Response body contains email "fikri@gmail.com" and message "login sukses"
     And Validate json schema Login User
 
   @Test @NegativeCase

@@ -9,22 +9,23 @@ import java.io.File;
 
 public class UlasanAPI {
     public static String POST_ULASAN = Constant.BASE_URL + "/ulasan/{id}";
-
     public static String GET_ALL_ULASAN = Constant.BASE_URL + "/{path}";
     public static String GET_ULASAN_BY_ID = Constant.BASE_URL + "/ulasan/{id}";
 
     //    Post Ulasan
     @Step("Add ulasan with valid/invalid json")
-    public void postUlasan(File json, int id) {
+    public void postUlasan(File json, int id, String token) {
         SerenityRest.given()
+                .header("Authorization", "Bearer " + token)
                 .pathParam("id", id)
                 .contentType(ContentType.JSON)
                 .body(json);
     }
 
     @Step("Add ulasan with valid/invalid json and without ID")
-    public void postUlasan(File json) {
+    public void postUlasan(File json, String token) {
         SerenityRest.given()
+                .header("Authorization", "Bearer " + token)
                 .pathParam("id", "")
                 .contentType(ContentType.JSON)
                 .body(json);

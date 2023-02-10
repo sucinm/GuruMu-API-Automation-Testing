@@ -1,9 +1,10 @@
+@Ulasan
 Feature: Get All Ulasan
   @Test @PositiveCase
   Scenario: Get all data ulasan with valid url
     Given Get all data ulasan with "ulasan" as path
     When Get all ulasan request
-    Then Should return status code 201
+    Then Should return status code 200
     And Validate json schema all data ulasan
 
   @Test @NegativeCase

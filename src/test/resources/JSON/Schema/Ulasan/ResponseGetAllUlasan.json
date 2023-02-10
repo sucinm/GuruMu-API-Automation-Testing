@@ -8,7 +8,7 @@
         {
           "type": "object",
           "properties": {
-            "ulasan_id": {
+            "id": {
               "type": "integer"
             },
             "nama_guru": {
@@ -22,7 +22,7 @@
             }
           },
           "required": [
-            "ulasan_id",
+            "id",
             "nama_guru",
             "penilaian",
             "ulasan"
@@ -31,7 +31,7 @@
         {
           "type": "object",
           "properties": {
-            "ulasan_id": {
+            "id": {
               "type": "integer"
             },
             "nama_guru": {
@@ -45,7 +45,7 @@
             }
           },
           "required": [
-            "ulasan_id",
+            "id",
             "nama_guru",
             "penilaian",
             "ulasan"
@@ -54,7 +54,7 @@
         {
           "type": "object",
           "properties": {
-            "ulasan_id": {
+            "id": {
               "type": "integer"
             },
             "nama_guru": {
@@ -68,7 +68,329 @@
             }
           },
           "required": [
-            "ulasan_id",
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "nama_guru",
+            "penilaian",
+            "ulasan"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nama_guru": {
+              "type": "string"
+            },
+            "penilaian": {
+              "type": "integer"
+            },
+            "ulasan": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
             "nama_guru",
             "penilaian",
             "ulasan"

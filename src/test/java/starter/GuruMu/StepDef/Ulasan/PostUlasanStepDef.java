@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
 import starter.GuruMu.UlasanAPI;
+import starter.GuruMu.Utils.Authorization;
 import starter.GuruMu.Utils.Constant;
 
 import java.io.File;
@@ -16,22 +17,24 @@ public class PostUlasanStepDef {
     @Steps
     UlasanAPI ulasanAPI;
 
+    Authorization authorization = new Authorization();
+
     @Given("Add ulasan with valid json and {int} as ID")
     public void addUlasanWithValidJson(int id) {
         File json = new File(Constant.JSON_REQUEST + "/Ulasan/AddUlasan.json");
-        ulasanAPI.postUlasan(json, id);
+        ulasanAPI.postUlasan(json, id, authorization.getTokenSiswa());
     }
 
     @Given("Add ulasan with invalid json and {int} as ID")
     public void addUlasanWithInvalidJson(int id) {
         File json = new File(Constant.JSON_REQUEST + "/Ulasan/AddInvalidUlasan.json");
-        ulasanAPI.postUlasan(json, id);
+        ulasanAPI.postUlasan(json, id, authorization.getTokenSiswa());
     }
 
     @Given("Add ulasan with valid json without ID guru")
     public void addUlasanWithWithoutIDUlasan() {
         File json = new File(Constant.JSON_REQUEST + "/Ulasan/AddUlasan.json");
-        ulasanAPI.postUlasan(json);
+        ulasanAPI.postUlasan(json, authorization.getTokenSiswa());
     }
 
     @When("Post ulasan request")

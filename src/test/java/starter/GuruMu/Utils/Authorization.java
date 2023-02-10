@@ -28,8 +28,8 @@ public class Authorization {
         return token;
     }
 
-    public String getTokenGuru(){
-        File jsonRequest = new File(Constant.JSON_REQUEST + "/Login/LoginValidGuru.json");
+    public String getTokenSiswa(){
+        File jsonRequest = new File(Constant.JSON_REQUEST + "/Login/LoginValidMurid.json");
         Response response = SerenityRest.given()
                 .contentType(ContentType.JSON)
                 .body(jsonRequest)
@@ -44,8 +44,8 @@ public class Authorization {
         return token;
     }
 
-    public String getTokenMurid(){
-        File jsonRequest = new File(Constant.JSON_REQUEST + "/Login/LoginValidMurid.json");
+    public String getTokenGuru(){
+        File jsonRequest = new File(Constant.JSON_REQUEST + "/Login/LoginValidGuru.json");
         Response response = SerenityRest.given()
                 .contentType(ContentType.JSON)
                 .body(jsonRequest)

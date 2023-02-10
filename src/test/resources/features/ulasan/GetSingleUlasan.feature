@@ -1,3 +1,4 @@
+@Ulasan
 Feature: Get Single Ulasan
   @Test @PositiveCase
   Scenario: Get single data ulasan with valid id

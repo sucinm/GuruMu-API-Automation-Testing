@@ -4,7 +4,11 @@ Feature: Login User
     Given Post user login with valid User
     When Send request login user
     Then Should return status code 200
+<<<<<<< HEAD
     And Response body contains email "fikri@gmail.com" and message "login sukses"
+=======
+    And Response body contains email "johndoe@gmail.com" and message "login sukses"
+>>>>>>> ea14746 (feature/api-login: Add scenario for login)
     And Validate json schema Login User
 
   @Test @NegativeCase

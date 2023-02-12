@@ -24,8 +24,7 @@ public class Authorization {
         JsonPath jsonPathEvaluator = response.jsonPath();
 
         // Then simply query the JsonPath object to get a String value of the node
-        String token = jsonPathEvaluator.get(Constant.DATA_TOKEN);
-        return token;
+        return jsonPathEvaluator.get(Constant.DATA_TOKEN);
     }
 
     public String getTokenSiswa(){
@@ -40,8 +39,7 @@ public class Authorization {
         JsonPath jsonPathEvaluator = response.jsonPath();
 
         // Then simply query the JsonPath object to get a String value of the node
-        String token = jsonPathEvaluator.get(Constant.DATA_TOKEN);
-        return token;
+        return jsonPathEvaluator.get(Constant.DATA_TOKEN);
     }
 
     public String getTokenGuru(){
@@ -56,7 +54,18 @@ public class Authorization {
         JsonPath jsonPathEvaluator = response.jsonPath();
 
         // Then simply query the JsonPath object to get a String value of the node
-        String token = jsonPathEvaluator.get(Constant.DATA_TOKEN);
-        return token;
+        return jsonPathEvaluator.get(Constant.DATA_TOKEN);
+    }
+
+    public String getTokenByCustom(String json){
+        Response response = SerenityRest.given()
+                .contentType(ContentType.JSON)
+                .body(json)
+                .post(LoginAPI.POST_LOGIN);
+
+        JsonPath jsonPathEvaluator = response.jsonPath();
+        String token =jsonPathEvaluator.get(Constant.DATA_TOKEN);
+        System.out.println("token ini " + token);
+        return jsonPathEvaluator.get(Constant.DATA_TOKEN);
     }
 }

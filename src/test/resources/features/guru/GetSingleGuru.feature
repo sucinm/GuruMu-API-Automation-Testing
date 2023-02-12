@@ -1,3 +1,4 @@
+@Guru
 Feature: Get Single Guru
   @Test @PositiveCase
   Scenario: Get single data guru with valid id

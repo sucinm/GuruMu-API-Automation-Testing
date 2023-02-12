@@ -1,3 +1,4 @@
+@Guru
 Feature: Get All Guru
   @Test @PositiveCase
   Scenario: Get all data guru with valid url

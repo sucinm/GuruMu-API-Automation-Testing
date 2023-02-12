@@ -5,44 +5,76 @@
     "data": {
       "type": "object",
       "properties": {
-        "guru_id": {
+        "Nama": {
+          "type": "string"
+        },
+        "Email": {
+          "type": "string"
+        },
+        "Telepon": {
+          "type": "string"
+        },
+        "LinkedIn": {
+          "type": "string"
+        },
+        "Gelar": {
+          "type": "string"
+        },
+        "TentangSaya": {
+          "type": "string"
+        },
+        "Pengalaman": {
+          "type": "string"
+        },
+        "LokasiAsal": {
+          "type": "string"
+        },
+        "MetodeBljr": {
+          "type": "string"
+        },
+        "Tarif": {
           "type": "integer"
         },
-        "nama": {
+        "Pelajaran": {
           "type": "string"
         },
-        "email": {
+        "Pendidikan": {
           "type": "string"
         },
-        "alamat": {
+        "Avatar": {
           "type": "string"
         },
-        "elefon": {
+        "Ijazah": {
           "type": "string"
         },
-        "deskripsi": {
-          "type": "string"
+        "Latitude": {
+          "type": "number"
         },
-        "ijazah": {
-          "type": "string"
+        "Longitude": {
+          "type": "number"
         },
-        "pelajaran": {
-          "type": "string"
-        },
-        "avatar": {
-          "type": "string"
+        "Jadwal": {
+          "type": "null"
         }
       },
       "required": [
-        "guru_id",
-        "nama",
-        "email",
-        "alamat",
-        "elefon",
-        "deskripsi",
-        "ijazah",
-        "pelajaran",
-        "avatar"
+        "Nama",
+        "Email",
+        "Telepon",
+        "LinkedIn",
+        "Gelar",
+        "TentangSaya",
+        "Pengalaman",
+        "LokasiAsal",
+        "MetodeBljr",
+        "Tarif",
+        "Pelajaran",
+        "Pendidikan",
+        "Avatar",
+        "Ijazah",
+        "Latitude",
+        "Longitude",
+        "Jadwal"
       ]
     },
     "message": {

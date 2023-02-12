@@ -23,12 +23,19 @@ public class GuruAPI {
                 .body(json);
     }
 
+    @Step("Add guru with string json")
+    public void postGuru(String json) {
+        SerenityRest.given()
+                .contentType(ContentType.JSON)
+                .body(json);
+    }
+
     //    Put Guru
     @Step("Update guru with valid/invalid token and valid/invalid form-data")
     public void putGuru(String token, Map<String,String> formParam){
         SerenityRest.given()
-                .header("Authorization", "Bearer" + token)
-                .contentType(ContentType.TEXT)
+                .header("Authorization", "Bearer " + token)
+                .contentType(ContentType.URLENC)
                 .formParams(formParam);
     }
 
@@ -42,7 +49,7 @@ public class GuruAPI {
     @Step("Update guru with valid/invalid token and without form-data")
     public void putGuru(String token){
         SerenityRest.given()
-                .header("Authorization", "Bearer" + token);
+                .header("Authorization", "Bearer " + token);
     }
 
     @Step("Update guru without token and without form-data")
@@ -74,7 +81,7 @@ public class GuruAPI {
     @Step("Delete guru with valid/expired token")
     public void deleteGuru(String token){
         SerenityRest.given()
-                .header("Authorization", "Bearer" + token);
+                .header("Authorization", "Bearer " + token);
     }
 
     @Step("Delete guru without token")

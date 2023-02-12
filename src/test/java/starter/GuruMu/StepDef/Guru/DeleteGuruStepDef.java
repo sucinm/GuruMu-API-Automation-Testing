@@ -7,15 +7,13 @@ import net.thucydides.core.annotations.Steps;
 import starter.GuruMu.GuruAPI;
 import starter.GuruMu.Utils.Authorization;
 import starter.GuruMu.Utils.Constant;
+import starter.GuruMu.Utils.Payload;
 
 public class DeleteGuruStepDef {
     @Steps
     GuruAPI guruAPI;
     Authorization authorization = new Authorization();
-    @Given("Delete single data guru with valid token")
-    public void deleteSingleDataGuruWithValidToken() {
-        guruAPI.deleteGuru(authorization.getToken());
-    }
+    Payload payload = new Payload();
 
     @Given("Delete single data guru with expired token")
     public void deleteSingleDataGuruWithExpiredToken() {
@@ -30,5 +28,11 @@ public class DeleteGuruStepDef {
     @When("Delete guru request")
     public void deleteGuruRequest() {
         SerenityRest.when().delete(GuruAPI.DELETE_GURU);
+    }
+
+    @Given("Delete single data guru with {string} as email and {string} as password")
+    public void deleteSingleDataGuruWithAsEmailAndAsPassword(String email, String password) {
+        String token = authorization.getTokenByCustom(payload.bodyRequestLogin(email, password));
+        guruAPI.deleteGuru(token);
     }
 }

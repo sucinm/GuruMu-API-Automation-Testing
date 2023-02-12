@@ -2,6 +2,33 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
+    "pagination": {
+      "type": "object",
+      "properties": {
+        "page": {
+          "type": "integer"
+        },
+        "limit": {
+          "type": "integer"
+        },
+        "offset": {
+          "type": "integer"
+        },
+        "total_record": {
+          "type": "integer"
+        },
+        "total_page": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "page",
+        "limit",
+        "offset",
+        "total_record",
+        "total_page"
+      ]
+    },
     "data": {
       "type": "array",
       "items": [
@@ -17,9 +44,6 @@
             "alamat": {
               "type": "string"
             },
-            "penilaian": {
-              "type": "number"
-            },
             "judul": {
               "type": "string"
             },
@@ -28,16 +52,23 @@
             },
             "avatar": {
               "type": "string"
+            },
+            "tarif": {
+              "type": "integer"
+            },
+            "penilaian": {
+              "type": "integer"
             }
           },
           "required": [
             "guru_id",
             "nama",
             "alamat",
-            "penilaian",
             "judul",
             "pelajaran",
-            "avatar"
+            "avatar",
+            "tarif",
+            "penilaian"
           ]
         },
         {
@@ -52,8 +83,44 @@
             "alamat": {
               "type": "string"
             },
+            "judul": {
+              "type": "string"
+            },
+            "pelajaran": {
+              "type": "string"
+            },
+            "avatar": {
+              "type": "string"
+            },
+            "tarif": {
+              "type": "integer"
+            },
             "penilaian": {
-              "type": "number"
+              "type": "integer"
+            }
+          },
+          "required": [
+            "guru_id",
+            "nama",
+            "alamat",
+            "judul",
+            "pelajaran",
+            "avatar",
+            "tarif",
+            "penilaian"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guru_id": {
+              "type": "integer"
+            },
+            "nama": {
+              "type": "string"
+            },
+            "alamat": {
+              "type": "string"
             },
             "judul": {
               "type": "string"
@@ -63,33 +130,150 @@
             },
             "avatar": {
               "type": "string"
+            },
+            "tarif": {
+              "type": "integer"
+            },
+            "penilaian": {
+              "type": "integer"
             }
           },
           "required": [
             "guru_id",
             "nama",
             "alamat",
-            "penilaian",
             "judul",
             "pelajaran",
-            "avatar"
+            "avatar",
+            "tarif",
+            "penilaian"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guru_id": {
+              "type": "integer"
+            },
+            "nama": {
+              "type": "string"
+            },
+            "alamat": {
+              "type": "string"
+            },
+            "judul": {
+              "type": "string"
+            },
+            "pelajaran": {
+              "type": "string"
+            },
+            "avatar": {
+              "type": "string"
+            },
+            "tarif": {
+              "type": "integer"
+            },
+            "penilaian": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "guru_id",
+            "nama",
+            "alamat",
+            "judul",
+            "pelajaran",
+            "avatar",
+            "tarif",
+            "penilaian"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guru_id": {
+              "type": "integer"
+            },
+            "nama": {
+              "type": "string"
+            },
+            "alamat": {
+              "type": "string"
+            },
+            "judul": {
+              "type": "string"
+            },
+            "pelajaran": {
+              "type": "string"
+            },
+            "avatar": {
+              "type": "string"
+            },
+            "tarif": {
+              "type": "integer"
+            },
+            "penilaian": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "guru_id",
+            "nama",
+            "alamat",
+            "judul",
+            "pelajaran",
+            "avatar",
+            "tarif",
+            "penilaian"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "guru_id": {
+              "type": "integer"
+            },
+            "nama": {
+              "type": "string"
+            },
+            "alamat": {
+              "type": "string"
+            },
+            "judul": {
+              "type": "string"
+            },
+            "pelajaran": {
+              "type": "string"
+            },
+            "avatar": {
+              "type": "string"
+            },
+            "tarif": {
+              "type": "integer"
+            },
+            "penilaian": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "guru_id",
+            "nama",
+            "alamat",
+            "judul",
+            "pelajaran",
+            "avatar",
+            "tarif",
+            "penilaian"
           ]
         }
       ]
     },
     "message": {
-      "type": "object",
-      "properties": {
-        "example": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "example"
-      ]
+      "type": "string"
     }
   },
   "required": [
+    "pagination",
     "data",
     "message"
   ]

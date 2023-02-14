@@ -80,4 +80,11 @@ public class PostJadwalGuruStepDef
     {
         jadwalGuruAPI.setGetAllSesiWihoutForm(Authorization.EXPIRED_TOKEN);
     }
+
+    @Given("Add jadwal guru with invalid json body missing category")
+    public void addJadwalGuruWithInvalidJsonBodyMissingCategory()
+    {
+        File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuruMissing.json");
+        jadwalGuruAPI.setPostJadwalGuru(json);
+    }
 }

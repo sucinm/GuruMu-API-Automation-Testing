@@ -27,6 +27,13 @@ public class GetSesiGuruStepDef
         jadwalGuruAPI.getAllDataSesiGuru(path);
     }
 
+    @Given("Get all data sesi guru with role as {string} and status as {string}")
+    public void getAllDataSesiGuruValidWithAsPath(String role, String status)
+    {
+        jadwalGuruAPI.getAllDataSesiGuruWithRoleAndStatus(role, status);
+    }
+
+
     @When("Get all sesi guru request")
     public void getAllSesiGuruRequest()
     {
@@ -44,6 +51,42 @@ public class GetSesiGuruStepDef
     @When("Get sesi guru request")
     public void getSesiGuruRequest()
     {
-        SerenityRest.when().get(JadwalGuruAPI.GET_SESI);
+        SerenityRest.when().get(JadwalGuruAPI.GET_SESI_VALID);
+    }
+
+    @And("Guru already login with valid account")
+    public void guruAlreadyLoginWithValidAccount()
+    {
+        jadwalGuruAPI.setGetAllSesiWihoutForm(authorization.getTokenGuruGet());
+    }
+
+    @When("Get sesi guru without param request")
+    public void getSesiGuruWithoutParamRequest()
+    {
+        SerenityRest.when().get(JadwalGuruAPI.GET_SESI_WITHOUT_PARAM);
+    }
+
+    @When("Get sesi guru without parameter request")
+    public void getSesiGuruWithoutParameterRequest()
+    {
+        SerenityRest.when().get(JadwalGuruAPI.GET_ALL_SESI_PATH);
+    }
+
+    @When("Get sesi guru with invalid param request")
+    public void getSesiGuruWithInvalidParamRequest()
+    {
+        SerenityRest.when().get(JadwalGuruAPI.GET_SESI_INVALID_PARAM);
+    }
+
+    @When("Get sesi guru with invalid param data type request")
+    public void getSesiGuruWithInvalidParamDataTypeRequest()
+    {
+        SerenityRest.when().get(JadwalGuruAPI.GET_ALL_SESI);
+    }
+
+    @When("Get sesi guru with invalid param missing category request")
+    public void getSesiGuruWithInvalidParamMissingRequest()
+    {
+        SerenityRest.when().get(JadwalGuruAPI.GET_SESI_MISSING_CATEGORY);
     }
 }

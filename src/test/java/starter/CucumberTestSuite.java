@@ -11,5 +11,6 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         features = "classpath:features/" //adjust to running feature
 )
+
 public class CucumberTestSuite {
 }

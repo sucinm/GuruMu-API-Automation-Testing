@@ -54,7 +54,262 @@
           "type": "number"
         },
         "Jadwal": {
-          "type": "null"
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "integer"
+                },
+                "Tanggal": {
+                  "type": "string"
+                },
+                "Jam": {
+                  "type": "string"
+                },
+                "Status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID",
+                "Tanggal",
+                "Jam",
+                "Status"
+              ]
+            }
+          ]
         }
       },
       "required": [

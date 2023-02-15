@@ -18,9 +18,15 @@ public class PostLoginStepDef {
     @Steps
     LoginAPI loginAPI;
 
-    @Given("Post user login with valid User")
+    @Given("Post user login with valid Teacher")
     public void postLoginValidUser(){
         File json = new File(Constant.JSON_REQUEST+"/Login/LoginValid.json");
+        loginAPI.postLogin(json);
+    }
+
+    @Given("Post user login with valid Student")
+    public void postLoginValidUserStudent(){
+        File json = new File(Constant.JSON_REQUEST+"/Login/LoginValidMurid.json");
         loginAPI.postLogin(json);
     }
 
@@ -42,11 +48,12 @@ public class PostLoginStepDef {
                 .body(Constant.MESSAGE, equalTo(message));
     }
 
-    @And("Validate json schema Login User")
+    @And("Validate json schema Guru Login")
     public void validateJsonSchemaLoginUser() {
         File jsonSchema = new File(Constant.JSON_SCHEMA+"/Login/PostUserSchema.json");
         SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
+
 
     @Given("Post user login with empty json")
     public void postUserLoginWithEmptyJson() {
@@ -69,5 +76,17 @@ public class PostLoginStepDef {
     @When("Send request login user with invalid path")
     public void sendRequestLoginUserWithInvalidPath() {
         SerenityRest.when().post(LoginAPI.INVALID_PATH_LOGIN);
+    }
+
+    @And("Validate json schema student Login")
+    public void validateJsonSchemaStudentLogin() {
+        File jsonSchema = new File(Constant.JSON_SCHEMA+"/Login/PostMuridSchema.json");
+        SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
+    }
+
+    @Given("Post user login with valid User")
+    public void postUserLoginWithValidUser() {
+        File json = new File(Constant.JSON_REQUEST+"/Login/LoginValid.json");
+        loginAPI.postLogin(json);
     }
 }

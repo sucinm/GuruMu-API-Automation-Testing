@@ -1,6 +1,5 @@
 <div align="center">
-<img width="40%" src="./images/GuruMu.svg"><br/>
-<summary><h1 style="display-inline:block">GuruMu</h1></summary>
+<img width="30%" src="./images/GuruMu.png"><br/>
 Capstone Program Immersive Alterra Academy <br/>
 <a href="https://docs.google.com/spreadsheets/d/1mGQj6NVbtYZCHcabdkA4AH5UWITxDrlY0hzvWixFoT4/edit#gid=1006319607" target="blank"><img src="https://img.shields.io/badge/-Test%20Scenario-181717?style=for-the-badge&logo=microsoft-excel&color=f09559&logoColor=white" /></a>
 <a href="https://docs.google.com/presentation/d/10s1E8kp7J1FfBo_kir2odUjMtftLUqo5/edit?usp=sharing&ouid=113060634627923997336&rtpof=true&sd=true" target="blank"><img src="https://img.shields.io/badge/-Presentation%20GuruMU-181717?style=for-the-badge&logo=microsoft-PowerPoint&color=f09559&logoColor=white" /></a>
@@ -22,7 +21,10 @@ GuruMu is available for students from elementary to high school and also serves 
 - 🔎 [Automation Web](https://github.com/ALTA-Gurumu/QE-Web)
 
 ## Report
-On Progress...
+<div align="center">
+<img src="./images/API Coverage.png"><br/>
+<img src="./images/Functional Coverage.png"><br/>
+</div>
 
 ## Tools
 <div>

@@ -18,7 +18,4 @@ public class LoginAPI {
                 .contentType(ContentType.JSON)
                 .body(json);
     }
-
-
-
 }

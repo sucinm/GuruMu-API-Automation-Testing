@@ -33,13 +33,6 @@ public class GetSesiGuruStepDef
         jadwalGuruAPI.getAllDataSesiGuruWithRoleAndStatus(role, status);
     }
 
-
-    @When("Get all sesi guru request")
-    public void getAllSesiGuruRequest()
-    {
-        SerenityRest.when().get(JadwalGuruAPI.GET_ALL_SESI);
-    }
-
     @And("Validate json schema all data sesi guru")
     public void validateJsonSchemaAllDataSesiGuru()
     {
@@ -82,11 +75,5 @@ public class GetSesiGuruStepDef
     public void getSesiGuruWithInvalidParamDataTypeRequest()
     {
         SerenityRest.when().get(JadwalGuruAPI.GET_ALL_SESI);
-    }
-
-    @When("Get sesi guru with invalid param missing category request")
-    public void getSesiGuruWithInvalidParamMissingRequest()
-    {
-        SerenityRest.when().get(JadwalGuruAPI.GET_SESI_MISSING_CATEGORY);
     }
 }

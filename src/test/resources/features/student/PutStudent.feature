@@ -1,3 +1,4 @@
+@Student
 Feature: Put Student
   @Test @PositiveCase
     Scenario: Update murid with valid token and valid form-data

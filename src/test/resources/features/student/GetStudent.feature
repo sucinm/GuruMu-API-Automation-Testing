@@ -1,3 +1,4 @@
+@Student @Done
 Feature: Get Student
   @Test @PositiveCase
     Scenario: Get data murid with token

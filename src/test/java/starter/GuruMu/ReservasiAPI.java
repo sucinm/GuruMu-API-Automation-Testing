@@ -12,9 +12,10 @@ public class ReservasiAPI {
     public static String POST_RESERVASI = Constant.BASE_URL + "/reservasi";
 
     @Step("Add Reservasi with valid/invalid json")
-    public void postReservasi(File json) {
+    public void postReservasi(File json, String token) {
         SerenityRest.given()
-                .contentType(ContentType.JSON)
+                .header("Authorization", "Bearer " + token)
+                .contentType("application/json")
                 .body(json);
     }
 }

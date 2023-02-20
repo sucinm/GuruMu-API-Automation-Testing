@@ -1,3 +1,4 @@
+@Session @Done
 Feature: Get All Sesi Siswa
 
   @Test @PositiveCase

@@ -5,6 +5,9 @@
     "data": {
       "type": "object",
       "properties": {
+        "siswa_id": {
+          "type": "integer"
+        },
         "nama": {
           "type": "string"
         },
@@ -13,24 +16,25 @@
         },
         "role": {
           "type": "string"
-        },
-        "token": {
-          "type": "string"
         }
       },
       "required": [
+        "siswa_id",
         "nama",
         "email",
-        "role",
-        "token"
+        "role"
       ]
     },
     "message": {
+      "type": "string"
+    },
+    "token": {
       "type": "string"
     }
   },
   "required": [
     "data",
-    "message"
+    "message",
+    "token"
   ]
 }

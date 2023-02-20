@@ -1,3 +1,4 @@
+@Reservasi @Done
 Feature: Post Reservasi
   @Test @PositiveCase
   Scenario Outline: Post add Lanjutkan Pembayaran with complete information
@@ -8,7 +9,7 @@ Feature: Post Reservasi
     And Response body message contain "<message>"
     Examples:
       | code | status_pembayaran | message               |
-      | 201  | sukses            | sukses reservasi guru |
+      | 201  |                   | sukses reservasi guru |
 
   @Test @PositiveCase
   Scenario Outline: Post add Lanjutkan Pembayaran with empty 'pesan'
@@ -19,7 +20,7 @@ Feature: Post Reservasi
     And Response body message contain "<message>"
     Examples:
       | code | status_pembayaran | message               |
-      | 201  | sukses            | sukses reservasi guru |
+      | 201  |                   | sukses reservasi guru |
 
   @Test @NegativeCase
   Scenario Outline: Post add Lanjutkan Pembayaran with empty 'metode belajar'
@@ -70,3 +71,4 @@ Feature: Post Reservasi
     Examples:
       | code | message                        |
       | 400  | kesalahan input dari sisi user |
+

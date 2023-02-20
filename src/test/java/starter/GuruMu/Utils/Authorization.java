@@ -19,11 +19,8 @@ public class Authorization {
                 .body(jsonRequest)
                 .post(LoginAPI.POST_LOGIN);
 
-        // https://www.toolsqa.com/rest-assured/read-json-response-body-using-rest-assured/
-        // First get the JsonPath object instance from the Response interface
         JsonPath jsonPathEvaluator = response.jsonPath();
 
-        // Then simply query the JsonPath object to get a String value of the node
         return jsonPathEvaluator.get(Constant.DATA_TOKEN);
     }
 
@@ -34,11 +31,8 @@ public class Authorization {
                 .body(jsonRequest)
                 .post(LoginAPI.POST_LOGIN);
 
-        // https://www.toolsqa.com/rest-assured/read-json-response-body-using-rest-assured/
-        // First get the JsonPath object instance from the Response interface
         JsonPath jsonPathEvaluator = response.jsonPath();
 
-        // Then simply query the JsonPath object to get a String value of the node
         return jsonPathEvaluator.get(Constant.DATA_TOKEN);
     }
 
@@ -49,11 +43,8 @@ public class Authorization {
                 .body(jsonRequest)
                 .post(LoginAPI.POST_LOGIN);
 
-        // https://www.toolsqa.com/rest-assured/read-json-response-body-using-rest-assured/
-        // First get the JsonPath object instance from the Response interface
         JsonPath jsonPathEvaluator = response.jsonPath();
 
-        // Then simply query the JsonPath object to get a String value of the node
         return jsonPathEvaluator.get(Constant.DATA_TOKEN);
     }
 
@@ -64,11 +55,8 @@ public class Authorization {
                 .body(jsonRequest)
                 .post(LoginAPI.POST_LOGIN);
 
-        // https://www.toolsqa.com/rest-assured/read-json-response-body-using-rest-assured/
-        // First get the JsonPath object instance from the Response interface
         JsonPath jsonPathEvaluator = response.jsonPath();
 
-        // Then simply query the JsonPath object to get a String value of the node
         return jsonPathEvaluator.get(Constant.DATA_TOKEN);
     }
 
@@ -79,11 +67,8 @@ public class Authorization {
                 .body(jsonRequest)
                 .post(LoginAPI.POST_LOGIN);
 
-        // https://www.toolsqa.com/rest-assured/read-json-response-body-using-rest-assured/
-        // First get the JsonPath object instance from the Response interface
         JsonPath jsonPathEvaluator = response.jsonPath();
 
-        // Then simply query the JsonPath object to get a String value of the node
         return jsonPathEvaluator.get(Constant.DATA_TOKEN);
     }
 
@@ -95,7 +80,7 @@ public class Authorization {
 
         JsonPath jsonPathEvaluator = response.jsonPath();
         String token =jsonPathEvaluator.get(Constant.DATA_TOKEN);
-        System.out.println("token ini " + token);
+
         return jsonPathEvaluator.get(Constant.DATA_TOKEN);
     }
 }

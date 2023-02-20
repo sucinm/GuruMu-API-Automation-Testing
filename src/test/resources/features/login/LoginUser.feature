@@ -1,12 +1,20 @@
-@Login @Nice
+@Login
 Feature: Login User
   @Test @PositiveCase
-  Scenario: Login with valid user JSON
-    Given Post user login with valid User
+  Scenario: Login with valid Teacher JSON
+    Given Post user login with valid Teacher
+    When Send request login user
+    Then Should return status code 200
+    And Response body contains email "qatestregisterguru11@gmail.com" and message "login sukses"
+    And Validate json schema Guru Login
+
+  Scenario: Login with valid Student JSON
+    Given Post user login with valid Student
     When Send request login user
     Then Should return status code 200
     And Response body contains email "sucimurid@gmail.com" and message "login sukses"
     And Validate json schema Login User
+
 
   @Test @NegativeCase
   Scenario: Login with invalid user JSON

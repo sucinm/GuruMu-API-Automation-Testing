@@ -49,7 +49,7 @@ public class PostLoginStepDef {
     }
 
     @And("Validate json schema Guru Login")
-    public void validateJsonSchemaLoginUser() {
+    public void validateJsonSchemaGuruLogin() {
         File jsonSchema = new File(Constant.JSON_SCHEMA+"/Login/PostUserSchema.json");
         SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
@@ -88,5 +88,11 @@ public class PostLoginStepDef {
     public void postUserLoginWithValidUser() {
         File json = new File(Constant.JSON_REQUEST+"/Login/LoginValid.json");
         loginAPI.postLogin(json);
+    }
+
+    @And("Validate json schema Login User")
+    public void validateJsonSchemaLoginUser() {
+        File jsonSchema = new File(Constant.JSON_SCHEMA+"/Login/PostMuridSchema.json");
+        SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
 }

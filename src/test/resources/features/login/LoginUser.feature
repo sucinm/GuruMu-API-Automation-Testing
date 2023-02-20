@@ -5,9 +5,10 @@ Feature: Login User
     Given Post user login with valid Teacher
     When Send request login user
     Then Should return status code 200
-    And Response body contains email "qatestregisterguru11@gmail.com" and message "login sukses"
+    And Response body contains email "suciguru@alta.com" and message "login sukses"
     And Validate json schema Guru Login
 
+  @Test @PositiveCase
   Scenario: Login with valid Student JSON
     Given Post user login with valid Student
     When Send request login user

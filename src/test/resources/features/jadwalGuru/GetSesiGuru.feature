@@ -1,3 +1,4 @@
+@Session @Done
 Feature: Get All Sesi Guru
 
   @Test @PositiveCase
@@ -33,10 +34,8 @@ Feature: Get All Sesi Guru
 
   @Test @NegativeCase
   Scenario: Get sesi guru with invalid parameter and valid bearer
-#    Given Get all data sesi guru with role as "a" and status as "iniapa"
     Given Get all data sesi guru with "sesiku?role=a&status=iniapa" as path
     And Guru already login with valid account
-#    When Get sesi guru with invalid param data type request
     When Get sesi guru with invalid param request
     Then Should return status code 400
     And Response body message contain "role/status tidak valid"
@@ -44,7 +43,6 @@ Feature: Get All Sesi Guru
   @Test @NegativeCase
   Scenario: Get sesi guru with invalid parameter data type and valid bearer
     Given Get all data sesi guru with role as "guru" and status as "$%"
-#    Given Get all data sesi guru with "sesiku?role=guru&status=%$" as path
     And Guru already login with valid account
     When Get sesi guru with invalid param data type request
     Then Should return status code 400

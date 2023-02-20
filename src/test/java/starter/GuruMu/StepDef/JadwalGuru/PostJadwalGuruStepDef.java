@@ -20,17 +20,18 @@ public class PostJadwalGuruStepDef
     JadwalGuruAPI jadwalGuruAPI;
     Authorization authorization = new Authorization();
 
+    @Given("Add jadwal guru with valid json and token")
+    public void addJadwalGuruWithValidJsonAndToken()
+    {
+        File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuru.json");
+        jadwalGuruAPI.postPostJadwalGuru(json, authorization.getTokenGuruGet());
+    }
+
     @Given("Add jadwal guru with valid json")
     public void addJadwalGuruWithValidJson()
     {
         File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuru.json");
-        jadwalGuruAPI.setPostJadwalGuru(json);
-    }
-
-    @And("Guru already login")
-    public void guruAlreadyLogin()
-    {
-        jadwalGuruAPI.setGetAllSesiWihoutForm(authorization.getTokenGuru());
+        jadwalGuruAPI.postPostJadwalGuru(json, "");
     }
 
     @When("Post jadwal guru request")
@@ -51,28 +52,28 @@ public class PostJadwalGuruStepDef
     public void addJadwalGuruWithInvalidJsonBodyName()
     {
         File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuruInvalid.json");
-        jadwalGuruAPI.setPostJadwalGuru(json);
+        jadwalGuruAPI.postPostJadwalGuru(json, authorization.getTokenGuru());
     }
 
     @Given("Add jadwal guru with invalid json body with extra category")
     public void addJadwalGuruWithInvalidJsonBodyExtraCategory()
     {
         File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuruExtra.json");
-        jadwalGuruAPI.setPostJadwalGuru(json);
+        jadwalGuruAPI.postPostJadwalGuru(json, authorization.getTokenGuru());
     }
 
     @Given("Add jadwal guru with invalid json body with blank tanggal")
     public void addJadwalGuruWithInvalidJsonBodyBlankTanggal()
     {
         File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuruBlankJadwal.json");
-        jadwalGuruAPI.setPostJadwalGuru(json);
+        jadwalGuruAPI.postPostJadwalGuru(json, authorization.getTokenGuru());
     }
 
     @Given("Add jadwal guru with invalid json body with blank jam")
     public void addJadwalGuruWithInvalidJsonBodyBlankJam()
     {
         File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuruBlankJam.json");
-        jadwalGuruAPI.setPostJadwalGuru(json);
+        jadwalGuruAPI.postPostJadwalGuru(json, authorization.getTokenGuru());
     }
 
     @And("Guru already login without bearer token")
@@ -85,6 +86,6 @@ public class PostJadwalGuruStepDef
     public void addJadwalGuruWithInvalidJsonBodyMissingCategory()
     {
         File json = new File(Constant.JSON_REQUEST + "/JadwalGuru/AddJadwalGuruMissing.json");
-        jadwalGuruAPI.setPostJadwalGuru(json);
+        jadwalGuruAPI.postPostJadwalGuru(json, authorization.getTokenGuru());
     }
 }

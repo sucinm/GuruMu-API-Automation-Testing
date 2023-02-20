@@ -1,3 +1,4 @@
+@Student @Done
 Feature: Post Student
   @Test @PositiveCase
     Scenario Outline: Add murid with valid json
@@ -7,8 +8,8 @@ Feature: Post Student
     And Response body data nama should contain "<name>"
     And Response body message contain "<message>"
     Examples:
-    |name|message|
-    | John Doe   | berhasil daftar akun baru  |
+      | name        | message                   |
+      | hapus murid | berhasil daftar akun baru |
 
   @Test @NegativeCase
     Scenario: Add murid with invalid JSON

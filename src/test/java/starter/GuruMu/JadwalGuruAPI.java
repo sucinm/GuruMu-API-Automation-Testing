@@ -17,20 +17,21 @@ public class JadwalGuruAPI
     public static String GET_SESI_SISWA = Constant.BASE_URL + "/sesiku?role=siswa&status=selesai";
     public static String GET_SESI_WITHOUT_PARAM = Constant.BASE_URL + "/sesiku";
     public static String GET_SESI_INVALID_PARAM = Constant.BASE_URL + "/sesiku?role=a&status=iniapa";
-    public static String GET_SESI_MISSING_CATEGORY = Constant.BASE_URL + "sesiku?role=guru";
     public static String GET_SISWA_EXTRA = Constant.BASE_URL + "/sesiku?role=siswa&status=ongoing&reservasi_id=37";
     public static String GET_SISWA_TYPE = Constant.BASE_URL + "/sesiku?role=siswa&status=%$";
     public static String GET_SISWA_MISSING = Constant.BASE_URL + "/sesiku?role=siswa";
     public static String GET_SISWA_BLANK = Constant.BASE_URL + "/sesiku?role=siswa&status=";
 
     //    Post Jadwal Guru
-    @Step("Add jadwal guru with valid/invalid json")
-    public void setPostJadwalGuru(File json)
+    @Step("Add jadwal guru with valid json & token")
+    public void postPostJadwalGuru(File json, String token)
     {
         SerenityRest.given()
                 .contentType(ContentType.JSON)
+                .header("Authorization", "Bearer " + token)
                 .body(json);
     }
+
 
     //    Get All Data Sesi Guru
     @Step("Get all data sesi guru with valid/invalid url")

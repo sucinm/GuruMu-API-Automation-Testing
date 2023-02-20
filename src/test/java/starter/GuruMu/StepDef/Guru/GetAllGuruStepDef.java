@@ -30,21 +30,9 @@ public class GetAllGuruStepDef {
     }
 
     @And("Validate json schema all data guru")
-    public void validateJsonSchemaAllDataGuru()
-    {
+    public void validateJsonSchemaAllDataGuru() {
         File jsonSchema = new File(Constant.JSON_SCHEMA + "/Guru/ResponseGetAllGuru.json");
         SerenityRest.then()
                 .body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
-    }
-
-    @Given("Get all data guru with {string} as path in page {string}")
-    public void getAllDataGuruWithAsPathInPage(String path, String page) {
-        guruAPI.getAllDataGuru(path, page);
-    }
-
-    @And("Validate pagination page is {string}")
-    public void validatePaginationPageIs(String page) {
-        SerenityRest.then()
-                .body(Constant.PAGINATION_PAGE, equalTo(page));
     }
 }

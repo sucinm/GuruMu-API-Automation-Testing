@@ -1,3 +1,4 @@
+@Student @Done
 Feature: Delete Student
   @Test @PositiveCase
     Scenario: Delete murid with valid token

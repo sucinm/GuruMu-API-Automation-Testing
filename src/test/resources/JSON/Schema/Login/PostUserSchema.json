@@ -5,7 +5,7 @@
     "data": {
       "type": "object",
       "properties": {
-        "guru_id": {
+        "siswa_id": {
           "type": "integer"
         },
         "nama": {
@@ -16,17 +16,13 @@
         },
         "role": {
           "type": "string"
-        },
-        "verifikasi": {
-          "type": "boolean"
         }
       },
       "required": [
-        "guru_id",
+        "siswa_id",
         "nama",
         "email",
-        "role",
-        "verifikasi"
+        "role"
       ]
     },
     "message": {

@@ -12,8 +12,9 @@ Feature: Login User
     Given Post user login with valid Student
     When Send request login user
     Then Should return status code 200
-    And Response body contains email "qatestregistermurid1@gmail.com" and message "login sukses"
-    And Validate json schema student Login
+    And Response body contains email "sucimurid@gmail.com" and message "login sukses"
+    And Validate json schema Login User
+
 
   @Test @NegativeCase
   Scenario: Login with invalid user JSON

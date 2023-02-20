@@ -16,8 +16,6 @@ public class PutGuruStepDef {
     GuruAPI guruAPI;
     Authorization authorization = new Authorization();
     Payload payload = new Payload();
-
-
     @Given("Update guru with {string} as nama, {string} as email, and {string} as password")
     public void updateGuruWithAsNamaAsEmailAndAsPassword(String nama, String email, String password) {
         String token = authorization.getTokenByCustom(payload.bodyRequestLogin(email, password));
@@ -28,7 +26,6 @@ public class PutGuruStepDef {
     public void putGuruRequest() {
         SerenityRest.when().put(GuruAPI.PUT_GURU);
     }
-    
 
     @Given("Update guru with expired token and without form-data")
     public void updateGuruWithExpiredTokenAndWithoutFormData() {
@@ -83,22 +80,18 @@ public class PutGuruStepDef {
         formParams.put("gelar", "SST");
         return formParams;
     }
-
     @Given("Update guru with {string} as nama, {string} as email, and {string} as password with expired token")
     public void updateGuruWithAsNamaAsEmailAndAsPasswordWithExpiredToken(String nama, String email, String password) {
         guruAPI.putGuru(Authorization.EXPIRED_TOKEN, getFormValidParamsMap(nama, email, password));
     }
-
     @Given("Update guru with {string} as nama, {string} as email, and {string} as password with expired token and invalid form-data")
     public void updateGuruWithAsNamaAsEmailAndAsPasswordWithExpiredTokenAndInvalidFormData(String nama, String email, String password) {
         guruAPI.putGuru(Authorization.EXPIRED_TOKEN, getFormInValidParamsMap(nama, email, password));
     }
-
     @Given("Update guru with {string} as nama, {string} as email, and {string} as password without token and valid form-data")
     public void updateGuruWithAsNamaAsEmailAndAsPasswordWithoutTokenAndValidFormData(String nama, String email, String password) {
         guruAPI.putGuru(getFormValidParamsMap(nama, email, password));
     }
-
     @Given("Update guru with {string} as nama, {string} as email, and {string} as password with valid token and without form-data")
     public void updateGuruWithAsNamaAsEmailAndAsPasswordWithValidTokenAndWithoutFormData(String nama, String email, String password) {
         String token = authorization.getTokenByCustom(payload.bodyRequestLogin(email, password));

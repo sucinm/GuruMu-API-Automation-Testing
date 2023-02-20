@@ -19,7 +19,7 @@ public class StudentAPI {
     @Step("Update murid with valid/invalid token and valid/invalid form-data")
     public void putStudent(String token, Map<String, String> formData) {
         SerenityRest.given()
-                .header("Authorization", "Bearer" + token)
+                .header("Authorization", "Bearer " + token)
                 .contentType(ContentType.TEXT)
                 .formParams(formData);
     }
@@ -34,7 +34,7 @@ public class StudentAPI {
     @Step("Update murid with valid/invalid token and without valid/invalid form-data")
     public void putStudent(String token) {
         SerenityRest.given()
-                .header("Authorization", "Bearer" + token);
+                .header("Authorization", "Bearer " + token);
     }
 
     @Step("Update murid with without valid/invalid token and without valid/invalid form-data")
@@ -45,7 +45,7 @@ public class StudentAPI {
     @Step("Get data murid with token")
     public void getStudent(String token) {
         SerenityRest.given()
-                .header("Authorization", "Bearer" + token);
+                .header("Authorization", "Bearer " + token);
     }
 
     @Step("Get data murid without token")
@@ -56,7 +56,7 @@ public class StudentAPI {
     @Step("Delete data murid with token")
     public void deleteStudent(String token) {
         SerenityRest.given()
-                .header("Authorization", "Bearer" + token);
+                .header("Authorization", "Bearer " + token);
     }
 
     @Step("Delete data murid without token")
